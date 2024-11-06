@@ -60,6 +60,7 @@ export function resolveChokidarOptions(
     '**/.git/**',
     '**/node_modules/**',
     '**/test-results/**', // Playwright
+    "**/*.bck", // helix editor
     escapePath(cacheDir) + '/**',
     ...arraify(ignoredList || []),
   ]
